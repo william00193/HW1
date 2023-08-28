@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import android.widget.Button
-
+import android.widget.Toast
 
 
 class MainActivity : AppCompatActivity() {
@@ -26,23 +26,23 @@ class MainActivity : AppCompatActivity() {
 
 
         trueButton.setOnClickListener {
-            val snackBar = Snackbar.make(
-                it,
-                "Correct",
-                Snackbar.LENGTH_LONG
-            )
-            snackBar.show()
 
-        }
-        falseButton.setOnClickListener {
-            val snackBar = Snackbar.make(
-                it,
-                "Incorrect",
-                Snackbar.LENGTH_LONG
+            Toast.makeText(
+                this,
+                R.string.true_button,
+                Toast.LENGTH_SHORT
             )
-            snackBar.setTextColor(Color.BLACK)
-            snackBar.setBackgroundTint(Color.RED)
-            snackBar.show()
+                .show()
+        }
+
+        falseButton.setOnClickListener {
+
+            Toast.makeText(
+                this,
+                R.string.false_button,
+                Toast.LENGTH_SHORT
+            )
+                .show()
         }
 
 
