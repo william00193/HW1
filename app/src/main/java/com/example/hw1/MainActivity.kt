@@ -21,10 +21,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+        //Defining both of the buttons and giving them a name
         trueButton = findViewById(R.id.true_button)
         falseButton = findViewById(R.id.false_button)
 
-
+        //My on onclick listener for the true button
+        // and inserting a string for 'True'
         trueButton.setOnClickListener {
 
             Toast.makeText(
@@ -35,6 +37,8 @@ class MainActivity : AppCompatActivity() {
                 .show()
         }
 
+        //My on onclick listener for the false button
+        // and inserting a string for 'false'
         falseButton.setOnClickListener {
 
             Toast.makeText(
