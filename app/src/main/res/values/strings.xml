@@ -1,7 +1,7 @@
 
 
-<!--Hard coded strings that display the app name, -->
-<!--    both the true and false buttons and the question-->
+
+<!--    True and false buttons, App Name,  and the question-->
 <resources>
     <string name="app_name">GeoQuiz</string>
     <string name="true_button">True</string>

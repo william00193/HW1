@@ -10,7 +10,7 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
-
+//Initializing both buttons as a 'button'
     private lateinit var trueButton: Button
     private lateinit var falseButton: Button
 
@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
                 R.string.true_button,
                 Toast.LENGTH_SHORT
             )
+                    //Showing the toast
                 .show()
         }
 
@@ -46,6 +47,7 @@ class MainActivity : AppCompatActivity() {
                 R.string.false_button,
                 Toast.LENGTH_SHORT
             )
+                //Showing the toast
                 .show()
         }
 
